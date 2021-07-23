@@ -33,9 +33,9 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://i.loli.net/2021/07/23/yPNQ6mVkwTvX7lo.jpg">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/hexo-theme-nexmoe@latest/source/lib/mdui_043tiny/css/mdui.css,npm/hexo-theme-nexmoe@latest/source/lib/iconfont/iconfont.css?v=233" crossorigin>
-  <link rel="stylesheet" href="/css/style.css?v=1627059071246">
+  <link rel="stylesheet" href="/css/style.css?v=1627059750258">
   
-  <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1627059071246">
+  <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1627059750258">
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -175,22 +175,19 @@
 
   <div class="nexmoe-post-footer">
     <section class="nexmoe-comment">
-    <!-- Unpkg -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/disqusjs@1.2.5/dist/disqusjs.min.css">
-<script src="https://cdn.jsdelivr.net/npm/disqusjs@1.2.5/dist/disqus.min.js"></script>
-<div id="disqus_thread"></div>
+    <div id="gitment"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
-var dsqjs = new DisqusJS({
-    shortname: 'planet-aber',
-    siteName: 'PLANET_aBER',
-    identifier: 'https://aber0724.github.io/2021/07/23/%E7%85%A7%E7%89%87%E6%95%B4%E7%90%863-0/',
-    url: 'https://aber0724.github.io/2021/07/23/%E7%85%A7%E7%89%87%E6%95%B4%E7%90%863-0/',
-    title: '照片整理2.0',
-    api: 'https://disqus.skk.moe/disqus/',
-    apikey: 'WWzPPcIxX3sRGCTOnKruGIZh8fq1t0jXkWNyPozBpqgD0dyzyCXKHK0n0FGyAjeR',
-    admin: 'aber_r',
-    adminLabel: 'up'
-});
+var gitment = new Gitment({
+    owner: 'aBER0724', // 你的 GitHub ID
+    repo: 'aBER0724.github.io', // 存储评论的 repo
+    oauth: {
+        client_id: '8654ea4a1157f79f4b01', // 你的 client ID
+        client_secret: '1ef2a4748eee8fc5a2031e2477f72ed50bb3e03b' // 你的 client secret
+    },
+})
+gitment.render('gitment')
 </script>
 </section>
   </div>
@@ -213,7 +210,7 @@ var dsqjs = new DisqusJS({
 
  
 
-<script async src="/js/app.js?v=1627059071247"></script>
+<script async src="/js/app.js?v=1627059750259"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
 <script>
